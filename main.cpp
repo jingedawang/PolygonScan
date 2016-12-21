@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//定义用于边表ET和活动表AET的通用类Edge
+//定义用于边表ET和活动边表AET的通用类Edge
 class Edge
 {
 public:
@@ -50,7 +50,7 @@ const int windowHeight = 1200;
 vector<Point> vertices = { Point(566, 970), Point(685, 1020), Point(754, 683), Point(985, 768), Point(1037, 481), Point(1208, 546), Point(1233, 179), Point(1140, 440), Point(951, 386), Point(899, 662), Point(668, 562) };
 //边表
 Edge *ET[windowHeight];
-//活动表
+//活动边表
 Edge *AET;
 
 void init(void)

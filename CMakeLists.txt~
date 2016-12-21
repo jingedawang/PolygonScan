@@ -1,0 +1,9 @@
+project(sweep)
+
+add_executable(sweep main.cpp)
+
+target_link_libraries(sweep GL)
+target_link_libraries(sweep GLU)
+target_link_libraries(sweep glut)
+
+install(TARGETS sweep RUNTIME DESTINATION bin)

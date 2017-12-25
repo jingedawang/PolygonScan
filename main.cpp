@@ -89,7 +89,7 @@ void polygonScan()
   //建立边表ET
   for (int i=0; i<vertices.size(); i++)
   {
-    //取出当前点1前后相邻的共4个点，点1与点2的连线作为本次循环处理的边，另外两个点点3和点4用于计算奇点
+    //取出当前点1前后相邻的共4个点，点1与点2的连线作为本次循环处理的边，另外两个点点0和点3用于计算奇点
     int x0 = vertices[(i - 1 + vertices.size()) % vertices.size()].x;
     int x1 = vertices[i].x;
     int x2 = vertices[(i + 1) % vertices.size()].x;
